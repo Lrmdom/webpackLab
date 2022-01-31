@@ -1,0 +1,9 @@
+# SwaggerJsClient.Proprietariocancelissue
+
+## Properties
+
+| Name          | Type       | Description | Notes                                    |
+| ------------- | ---------- | ----------- | ---------------------------------------- |
+| **id**        | **Number** |             | [optional]                               |
+| **propid**    | **Number** |             | [optional]                               |
+| **descricao** | **String** |             | [optional] [default to &#x27;NULL&#x27;] |
