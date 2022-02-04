@@ -17,28 +17,17 @@ module.exports = {
     publicPath: "/",
     clean: true,
   },
-
   module: {
     rules: [
+      {
+        parser: {
+          amd: false,
+        },
+      },
       {
         test: /\.html$/,
         use: ["html-loader"],
       },
-      /*{
-        test: /\.(jpg|png)$/,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 8192,
-              fallback: "file-loader",
-              name: "[name].[ext]",
-              outputPath: "images/",
-              publicPath: "images/",
-            },
-          },
-        ],
-      },*/
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
@@ -51,7 +40,6 @@ module.exports = {
           },
         ],
       },
-
       {
         test: /\.js$/,
         use: [
